@@ -3,6 +3,8 @@
   vars: 
     COURSE: "Devops with AWS from PLAY level"
     DURATION: "120Hrs"
+  vars_files:
+  - vars.yaml
   vars_prompt:
   - name: COURSE
     prompt: Please enter the course name
@@ -13,8 +15,8 @@
   tasks:
   - name: print the course information
     vars: 
-      #COURSE: "Devops with AWS from TASK level"
-      #DURATION: "120Hrs"
+      COURSE: "Devops with AWS from TASK level"
+      DURATION: "120Hrs"
     ansible.builtin.debug:
       msg: "Hi, I am learning {{COURSE}} for about {{DURATION}}"
 
