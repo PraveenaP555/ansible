@@ -5,4 +5,4 @@
   - name: install nginx
     ansible.builtin.package: #heterogenous modeuls that can work for all distributions
       name: nginx
-      state: present
+      state: absent
