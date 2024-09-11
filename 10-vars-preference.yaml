@@ -5,13 +5,13 @@
     DURATION: "120Hrs"
   #vars_files:
   #- vars.yaml
-  vars_prompt:
-  - name: COURSE
-    prompt: Please enter the course name
-    private: false
-  - name: DURATION
-    prompt: Please enter the duration
-    private: false
+  # vars_prompt:
+  # - name: COURSE
+  #   prompt: Please enter the course name
+  #   private: false
+  # - name: DURATION
+  #   prompt: Please enter the duration
+  #   private: false
   tasks:
   - name: print the course information
     vars: 
@@ -23,5 +23,5 @@
 #args
 #task level
 #files
-
+#prompt
 
