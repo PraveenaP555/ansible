@@ -36,6 +36,6 @@
         name: "Devops with AWS"
         duration: 120
         trainer: "praveena"
-      tasks:
-        ansible.buitin.debug:
-          msg: "{{ course | dict2items }}"
+    tasks:
+      ansible.buitin.debug:
+        msg: "{{ course | dict2items }}"
